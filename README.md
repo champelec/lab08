@@ -130,6 +130,78 @@ $ gist REPORT.md
 * используйте [TravisCI](https://travis-ci.com/) для сборки на операционной системе **Linux** с использованием компиляторов **gcc** и **clang**;
 * используйте [AppVeyor](https://www.appveyor.com/) для сборки на операционной системе **Windows**.
 
+GitHub Actions:
+
+```sh
+$ mkdir .github/workflows
+$ nano build.yml
+```
+
+Содержимое build.yml:
+
+```sh
+name: CMake workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        compiler: [gcc, clang]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ clang cmake
+
+      - name: Set compiler environment
+        run: |
+          if [ "${{ matrix.compiler }}" = "clang" ]; then
+            export CC=clang
+            export CXX=clang++
+          else
+            export CC=gcc
+            export CXX=g++
+          fi
+          echo "CC=$CC" >> $GITHUB_ENV
+          echo "CXX=$CXX" >> $GITHUB_ENV
+
+      - name: Configure with CMake
+        run: |
+          mkdir build
+          cd build
+          cmake .. -DCMAKE_C_COMPILER=$CC -DCMAKE_CXX_COMPILER=$CXX
+
+      - name: Build
+        run: |
+          cd build
+          cmake --build .
+
+      - name: Install
+        run: |
+          cd build
+          cmake --install . --prefix ../install
+```
+
+Добавляем в репозиторий:
+
+```sh
+$ git add build.yml
+$ git commit -m "Homework"
+$ git push origin master
+```
+
 ## Links
 
 - [Travis Client](https://github.com/travis-ci/travis.rb)
