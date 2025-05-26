@@ -1,5 +1,5 @@
 CMakeFiles/lab06.dir/solver_application/equation.cpp.o: \
- /home/shamshetdinov/champelec/workspace/projects/lab06/solver_application/equation.cpp \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/solver_application/equation.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
@@ -55,6 +55,13 @@ CMakeFiles/lab06.dir/solver_application/equation.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/aarch64-linux-gnu/bits/sched.h \
+ /usr/include/linux/sched/types.h /usr/include/linux/types.h \
+ /usr/lib/linux/uapi/arm64/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/lib/linux/uapi/arm64/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
  /usr/include/aarch64-linux-gnu/bits/time.h \
@@ -147,5 +154,5 @@ CMakeFiles/lab06.dir/solver_application/equation.cpp.o: \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/../formatter_ex_lib/formatter_ex.h \
- /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.h
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/../formatter_ex_lib/formatter_ex.h \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.h

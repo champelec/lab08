@@ -1,4 +1,4 @@
-# Install script for directory: /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib
+# Install script for directory: /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name/formatter_lib/cmake_install.cmake")
+  include("/home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name/formatter_lib/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name/install_local_manifest.txt"
+  file(WRITE "/home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06
+CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06/build
+CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08/build
 
 # Include any dependencies generated for this target.
 include formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/depend.make
@@ -73,18 +73,18 @@ formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/codegen:
 .PHONY : formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/codegen
 
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/flags.make
-formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp
+formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.cpp
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o"
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o -MF CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o.d -o CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o -c /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o"
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o -MF CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o.d -o CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o -c /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.cpp
 
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.i"
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp > CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.i
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.cpp > CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.i
 
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.s"
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp -o CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.s
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.cpp -o CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.s
 
 # Object files for target formatter_ex_lib
 formatter_ex_lib_OBJECTS = \
@@ -96,19 +96,19 @@ formatter_ex_lib_EXTERNAL_OBJECTS =
 formatter_ex_new_name/libformatter_ex_lib.a: formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o
 formatter_ex_new_name/libformatter_ex_lib.a: formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/build.make
 formatter_ex_new_name/libformatter_ex_lib.a: formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libformatter_ex_lib.a"
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex_lib.dir/cmake_clean_target.cmake
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/formatter_ex_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libformatter_ex_lib.a"
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex_lib.dir/cmake_clean_target.cmake
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/formatter_ex_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/build: formatter_ex_new_name/libformatter_ex_lib.a
 .PHONY : formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/build
 
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/clean:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex_lib.dir/cmake_clean.cmake
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex_lib.dir/cmake_clean.cmake
 .PHONY : formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/clean
 
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/depend:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shamshetdinov/champelec/workspace/projects/lab06 /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib /home/shamshetdinov/champelec/workspace/projects/lab06/build /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shamshetdinov/champelec/workspace/projects/lab08 /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib /home/shamshetdinov/champelec/workspace/projects/lab08/build /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/shamshetdinov/champelec/workspace/projects/lab06/formatter_lib
+CXX_INCLUDES = -I/home/shamshetdinov/champelec/workspace/projects/lab08/formatter_lib
 
 CXX_FLAGS = -std=gnu++11 -fPIC
 

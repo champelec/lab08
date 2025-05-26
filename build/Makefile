@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06
+CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06/build
+CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/shamshetdinov/champelec/workspace/projects/lab06/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/shamshetdinov/champelec/workspace/projects/lab08/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,9 +152,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles /home/shamshetdinov/champelec/workspace/projects/lab06/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles /home/shamshetdinov/champelec/workspace/projects/lab08/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

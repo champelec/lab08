@@ -1,7 +1,7 @@
 CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: \
- /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.cpp \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.cpp \
  /usr/include/stdc-predef.h \
- /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.h \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.h \
  /usr/include/c++/14/cmath /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -14,7 +14,8 @@ CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: \
  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
  /usr/include/c++/14/bits/cpp_type_traits.h \
- /usr/include/c++/14/ext/type_traits.h /usr/include/math.h \
+ /usr/include/c++/14/bits/version.h /usr/include/c++/14/ext/type_traits.h \
+ /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/aarch64-linux-gnu/bits/types.h \
  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
@@ -26,6 +27,7 @@ CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
  /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-macros.h \
  /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
@@ -59,8 +61,8 @@ CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/14/bits/version.h /usr/include/c++/14/stdexcept \
- /usr/include/c++/14/exception /usr/include/c++/14/bits/exception.h \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/exception \
+ /usr/include/c++/14/bits/exception.h \
  /usr/include/c++/14/bits/exception_ptr.h \
  /usr/include/c++/14/bits/exception_defines.h \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06
+CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06/build
+CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/solver_lib.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/solver_lib.dir/codegen:
 .PHONY : CMakeFiles/solver_lib.dir/codegen
 
 CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: CMakeFiles/solver_lib.dir/flags.make
-CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.cpp
+CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.cpp
 CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o: CMakeFiles/solver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o -MF CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o.d -o CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o -c /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o -MF CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o.d -o CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o -c /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.cpp
 
 CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.cpp > CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.cpp > CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.i
 
 CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shamshetdinov/champelec/workspace/projects/lab06/solver_lib/solver.cpp -o CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shamshetdinov/champelec/workspace/projects/lab08/solver_lib/solver.cpp -o CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.s
 
 # Object files for target solver_lib
 solver_lib_OBJECTS = \
@@ -96,7 +96,7 @@ solver_lib_EXTERNAL_OBJECTS =
 libsolver_lib.a: CMakeFiles/solver_lib.dir/solver_lib/solver.cpp.o
 libsolver_lib.a: CMakeFiles/solver_lib.dir/build.make
 libsolver_lib.a: CMakeFiles/solver_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsolver_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsolver_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/solver_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solver_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/solver_lib.dir/clean:
 .PHONY : CMakeFiles/solver_lib.dir/clean
 
 CMakeFiles/solver_lib.dir/depend:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shamshetdinov/champelec/workspace/projects/lab06 /home/shamshetdinov/champelec/workspace/projects/lab06 /home/shamshetdinov/champelec/workspace/projects/lab06/build /home/shamshetdinov/champelec/workspace/projects/lab06/build /home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles/solver_lib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shamshetdinov/champelec/workspace/projects/lab08 /home/shamshetdinov/champelec/workspace/projects/lab08 /home/shamshetdinov/champelec/workspace/projects/lab08/build /home/shamshetdinov/champelec/workspace/projects/lab08/build /home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles/solver_lib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/solver_lib.dir/depend
 

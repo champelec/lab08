@@ -1,7 +1,7 @@
 formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.o: \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_lib/formatter.cpp \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_lib/formatter.cpp \
  /usr/include/stdc-predef.h \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_lib/formatter.h \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_lib/formatter.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \

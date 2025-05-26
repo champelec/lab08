@@ -1,7 +1,7 @@
 formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.cpp \
  /usr/include/stdc-predef.h \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/formatter_ex.h \
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/formatter_ex.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -122,6 +122,13 @@ formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/aarch64-linux-gnu/bits/sched.h \
+ /usr/include/linux/sched/types.h /usr/include/linux/types.h \
+ /usr/lib/linux/uapi/arm64/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/lib/linux/uapi/arm64/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
  /usr/include/aarch64-linux-gnu/bits/time.h \
@@ -149,4 +156,4 @@ formatter_ex_new_name/CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o: \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
- /home/shamshetdinov/champelec/workspace/projects/lab06/formatter_ex_lib/../formatter_lib/formatter.h
+ /home/shamshetdinov/champelec/workspace/projects/lab08/formatter_ex_lib/../formatter_lib/formatter.h

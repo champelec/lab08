@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06
+CMAKE_SOURCE_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06/build
+CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab08/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/shamshetdinov/champelec/workspace/projects/lab06/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/shamshetdinov/champelec/workspace/projects/lab06/build/CPackSourceConfig.cmake
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/shamshetdinov/champelec/workspace/projects/lab08/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles /home/shamshetdinov/champelec/workspace/projects/lab06/build/formatter_ex_new_name/formatter_lib//CMakeFiles/progress.marks
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab06/build/CMakeFiles 0
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles /home/shamshetdinov/champelec/workspace/projects/lab08/build/formatter_ex_new_name/formatter_lib//CMakeFiles/progress.marks
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shamshetdinov/champelec/workspace/projects/lab08/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/clean
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/preinstall
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/preinstall
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/rule:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/rule
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/rule
 .PHONY : formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ formatter_lib: formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/
 
 # fast build rule for target.
 formatter_lib/fast:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build
 .PHONY : formatter_lib/fast
 
 formatter.o: formatter.cpp.o
@@ -200,7 +200,7 @@ formatter.o: formatter.cpp.o
 
 # target to build an object file
 formatter.cpp.o:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.o
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.o
 .PHONY : formatter.cpp.o
 
 formatter.i: formatter.cpp.i
@@ -208,7 +208,7 @@ formatter.i: formatter.cpp.i
 
 # target to preprocess a source file
 formatter.cpp.i:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.i
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.i
 .PHONY : formatter.cpp.i
 
 formatter.s: formatter.cpp.s
@@ -216,7 +216,7 @@ formatter.s: formatter.cpp.s
 
 # target to generate assembly for a file
 formatter.cpp.s:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.s
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(MAKE) $(MAKESILENT) -f formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/build.make formatter_ex_new_name/formatter_lib/CMakeFiles/formatter_lib.dir/formatter.cpp.s
 .PHONY : formatter.cpp.s
 
 # Help Target
@@ -248,6 +248,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shamshetdinov/champelec/workspace/projects/lab06/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shamshetdinov/champelec/workspace/projects/lab08/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
