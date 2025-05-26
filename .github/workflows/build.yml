@@ -1,53 +1,50 @@
-name: CMake workflow
+name: Actions
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+ push:
+  branches: [master]
+ pull_request:
+  branches: [master]
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+ build_Linux:
 
-    strategy:
-      matrix:
-        compiler: [gcc, clang]
+  runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+  steps:
+  - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y g++ clang cmake
+  - name: Configurate
+    run: |
+      rm -rf ${{github.workspace}}/build
+      mkdir build && cd build
+      cmake ..
+      cmake --build .
 
-      - name: Set compiler environment
-        run: |
-          if [ "${{ matrix.compiler }}" = "clang" ]; then
-            export CC=clang
-            export CXX=clang++
-          else
-            export CC=gcc
-            export CXX=g++
-          fi
-          echo "CC=$CC" >> $GITHUB_ENV
-          echo "CXX=$CXX" >> $GITHUB_ENV
+  - name: cpack
+    run: |
+      cd ${{github.workspace}}/build
+      cpack
 
-      - name: Configure with CMake
-        run: |
-          mkdir build
-          cd build
-          cmake .. -DCMAKE_C_COMPILER=$CC -DCMAKE_CXX_COMPILER=$CXX
+  - name: package
+    run: cmake --build ${{github.workspace}}/build --target package
 
-      - name: Build
-        run: |
-          cd build
-          cmake --build .
+  - name: package_source
+    run: cmake --build ${{github.workspace}}/build --target package_source
 
-      - name: Install
-        run: |
-          cd build
-          cmake --install . --prefix ../install
+  - name: Make a release
+    uses: ncipollo/release-action@v1
+    with:
+      artifacts: "${{github.workspace}}/build/*.deb,${{github.workspace}}/build/*.tar.gz,${{github.workspace}}/build/*.zip"
+      tag: 1.0.0
+      token: ${{ secrets.GITHUB_TOKEN }}
+      allowUpdates: true
 
+  - name: Arts
+    uses: actions/upload-artifact@v4
+    with:
+        name: lab06
+        path: ${{github.workspace}}/build/lab06
