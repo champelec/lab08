@@ -19,11 +19,11 @@ target_include_directories(formatter_ex_lib PUBLIC formatter_ex_lib formatter_li
 
 add_library(solver_lib ${CMAKE_CURRENT_SOURCE_DIR}/solver_lib/solver.cpp)
 
-add_executable(lab06 ${CMAKE_CURRENT_SOURCE_DIR}/solver_application/equation.cpp)
+add_executable(equation ${CMAKE_CURRENT_SOURCE_DIR}/solver_application/equation.cpp)
 
-target_link_libraries(lab06 formatter_lib formatter_ex_lib solver_lib)
+target_link_libraries(equation formatter_lib formatter_ex_lib solver_lib)
 
-install(TARGETS lab06
+install(TARGETS equation
 RUNTIME DESTINATION bin
 )
 
