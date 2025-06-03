@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/lab06.dir/link.d CMakeFiles/lab06.dir/solver_application/equation.cpp.o -o lab06  formatter_ex_new_name/formatter_lib/libformatter_lib.a formatter_ex_new_name/libformatter_ex_lib.a libsolver_lib.a formatter_ex_new_name/formatter_lib/libformatter_lib.a
